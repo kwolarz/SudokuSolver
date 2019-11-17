@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E235289823806ACC00A5BC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235289723806ACC00A5BC2B /* AppDelegate.swift */; };
 		E235289A23806ACC00A5BC2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235289923806ACC00A5BC2B /* SceneDelegate.swift */; };
-		E235289C23806ACC00A5BC2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235289B23806ACC00A5BC2B /* ViewController.swift */; };
 		E235289F23806ACC00A5BC2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E235289D23806ACC00A5BC2B /* Main.storyboard */; };
 		E23528A123806ACE00A5BC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23528A023806ACE00A5BC2B /* Assets.xcassets */; };
 		E23528A423806ACE00A5BC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23528A223806ACE00A5BC2B /* LaunchScreen.storyboard */; };
+		E23528AE23806F5700A5BC2B /* SudokuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23528AD23806F5700A5BC2B /* SudokuVC.swift */; };
+		E23528B02380734A00A5BC2B /* SudokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23528AF2380734A00A5BC2B /* SudokuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E235289423806ACC00A5BC2B /* SudokuSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E235289723806ACC00A5BC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E235289923806ACC00A5BC2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E235289B23806ACC00A5BC2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E235289E23806ACC00A5BC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E23528A023806ACE00A5BC2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23528A323806ACE00A5BC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E23528A523806ACE00A5BC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23528AD23806F5700A5BC2B /* SudokuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuVC.swift; sourceTree = "<group>"; };
+		E23528AF2380734A00A5BC2B /* SudokuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,10 @@
 			children = (
 				E235289723806ACC00A5BC2B /* AppDelegate.swift */,
 				E235289923806ACC00A5BC2B /* SceneDelegate.swift */,
-				E235289B23806ACC00A5BC2B /* ViewController.swift */,
+				E23528AD23806F5700A5BC2B /* SudokuVC.swift */,
 				E235289D23806ACC00A5BC2B /* Main.storyboard */,
 				E23528A023806ACE00A5BC2B /* Assets.xcassets */,
+				E23528AF2380734A00A5BC2B /* SudokuCell.swift */,
 				E23528A223806ACE00A5BC2B /* LaunchScreen.storyboard */,
 				E23528A523806ACE00A5BC2B /* Info.plist */,
 			);
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E235289C23806ACC00A5BC2B /* ViewController.swift in Sources */,
+				E23528AE23806F5700A5BC2B /* SudokuVC.swift in Sources */,
 				E235289823806ACC00A5BC2B /* AppDelegate.swift in Sources */,
+				E23528B02380734A00A5BC2B /* SudokuCell.swift in Sources */,
 				E235289A23806ACC00A5BC2B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TUUD5339D4;
 				INFOPLIST_FILE = SudokuSolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TUUD5339D4;
 				INFOPLIST_FILE = SudokuSolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
